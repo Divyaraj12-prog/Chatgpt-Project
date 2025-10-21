@@ -7,7 +7,7 @@ import ChatComposer from '../components/chat/ChatComposer.jsx';
 import '../components/chat/ChatLayout.css';
 import { fakeAIReply } from '../components/chat/aiClient.js';
 import { useDispatch, useSelector } from 'react-redux';
-import axios from 'axios';
+import axios from '../axios'; // <-- updated import
 import {
   ensureInitialChat,
   startNewChat,

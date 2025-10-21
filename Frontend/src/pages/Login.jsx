@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link,useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from '../axios'; // <-- updated import
  
 const Login = () => {
     const [ form, setForm ] = useState({ email: '', password: '' });

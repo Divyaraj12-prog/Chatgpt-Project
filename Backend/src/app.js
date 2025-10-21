@@ -8,7 +8,7 @@ const authRoutes = require('./routes/auth.routes');
 const chatRoutes = require('./routes/chat.routes');
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'chatgpt-project-green.vercel.app',
     credentials: true,
 }));
 app.use(express.json());

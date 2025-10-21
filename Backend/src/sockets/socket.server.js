@@ -9,7 +9,7 @@ const MsgModel = require('../models/message.model');
 function initSocketServer(httpserver) {
   const io = new Server(httpserver, {
     cors: {
-      origin: "http://localhost:5173",
+      origin: "chatgpt-project-green.vercel.app",
       credentials: true
     }
   })

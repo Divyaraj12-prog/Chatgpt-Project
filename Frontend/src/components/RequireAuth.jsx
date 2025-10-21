@@ -8,7 +8,7 @@ const RequireAuth = ({ children }) => {
 
   useEffect(() => {
     let mounted = true;
-    axios.get('http://localhost:3000/api/auth/me', { withCredentials: true })
+    axios.get('https://chatgpt-project-1-z3al.onrender.com/api/auth/me', { withCredentials: true })
       .then(() => { if (mounted) setStatus('ok'); })
       .catch(() => { if (mounted) setStatus('unauth'); });
 

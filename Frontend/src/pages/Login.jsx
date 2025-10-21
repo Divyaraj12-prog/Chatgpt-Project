@@ -9,7 +9,7 @@ const Login = () => {
     
     useEffect(() => {
       let mounted = true;
-      axios.get('http://localhost:3000/api/auth/me', { withCredentials: true })
+      axios.get('https://chatgpt-project-1-z3al.onrender.com/api/auth/me', { withCredentials: true })
         .then(() => { if (mounted) navigate('/', { replace: true }); })
         .catch(() => {});
       return () => { mounted = false; };
@@ -27,7 +27,7 @@ const Login = () => {
 
         console.log(form);
 
-        axios.post("http://localhost:3000/api/auth/login", {
+        axios.post("https://chatgpt-project-1-z3al.onrender.com/api/auth/login", {
             email: form.email,
             password: form.password
         },
